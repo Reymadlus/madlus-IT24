@@ -5,3 +5,9 @@
         "student_program": "BSIT-Information Technology",
         "student_enrolled_date": "2023-01-15"
     },
+    {
+        "student_id": 2,
+        "student_name": "Sarah Smith",
+        "student_program": "BS-Financial Management",
+        "student_enrolled_date": "2023-02-20"
+    },
