@@ -21,14 +21,14 @@ class CardSearch {
             const text = card.querySelector('.card-text').textContent.toLowerCase();
 
             if (title.includes(searchTerm) || text.includes(searchTerm)) {
-                card.closest('.col-md-4').style.display = ''; 
+                card.closest('.col-sm-4').style.display = '';
             } else {
-                card.closest('.col-md-4').style.display = 'none'; 
+                card.closest('.col-sm-4').style.display = 'none'; 
             }
         });
     }
 }
 
-           document.addEventListener('DOMContentLoaded', () => {
-            new CardSearch('cardSearch', 'container'); 
-            });
+document.addEventListener('DOMContentLoaded', () => {
+    new CardSearch('cardSearch', 'container2');
+});
