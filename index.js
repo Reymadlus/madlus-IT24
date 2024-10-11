@@ -25,3 +25,9 @@ class CardSearch {
                 card.closest('.col-sm-4').style.display = 'none'; 
             }
         });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    new CardSearch('cardSearch', 'container2');
+});
