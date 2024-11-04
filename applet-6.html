@@ -14,21 +14,22 @@
        background-repeat: no-repeat; 
        background-position: center; 
    }
-       .applet-container{
-           margin-top: 1rem;
-           margin-left: 2rem;
-       }
+
 
        .input-search{
          margin-left: 3rem;
          margin-top: 2rem;
          width:50%;
        }
+       .completed{
+            text-decoration: line-through;
+            color: gray;
+        }
 
    </style>
 </head>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,20 +60,25 @@
           </div>
         </div>
       </nav>
-      
       <body>
-      <div class="CONTAINER">
-    <div class="container-fluid" style="max-width: 40%;">
-        <h2 class="text-center">To-Do List</h2>
-           <div class="input-group mb-4">
-            <textarea class="form-control" style="border-radius: 10px;" id="todoInput" placeholder="Add a new task"  rows="3"></textarea>
-               <div class="input-group-append" style="margin-left: .5rem;">
-                  <button class="btn btn-primary" id="addButton">Save</button>
-               </div>
-                  <ul id="todoList" class="list-group"></ul>
+        <div class="CONTAIN">
+            <div class="row">
+             <div class="col">     
+         <div class="container-fluid" style="max-width: 40%;">
+            <h2 class="text-center">Todo List</h2>
+            <div class="input-group mb-4">
+                <textarea class="form-control" style="border-radius: 10px;" id="todoInput" placeholder="Add a new task"  rows="3"></textarea>
+                   <div class="input-group-append" style="margin-left: .5rem;">
+                      <button class="btn btn-primary" id="addButton">Save</button>
+                   </div>
+                </div>
+                <div class="col">
+                      <ul id="todoList" class="list-group"></ul>
+                    </div>
+            </div>
+         </div>
         </div>
-    </div>
-</div>
-</body>
-<script src="applet-6.js"></script>
-</html>
+        </div>
+    </body>
+    <script src="applet-6.js"></script>
+    </html>
